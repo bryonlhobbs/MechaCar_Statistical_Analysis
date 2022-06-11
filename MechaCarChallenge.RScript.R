@@ -14,3 +14,9 @@ total_summary
 
 lot_summary <- coil_df %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') #create lot summary table
 lot_summary
+
+t.test(Suspension_Coil$PSI,mu=1500) #determine if mean is statistically different than standard of 1500 psi
+
+t.test(subset(Suspension_Coil$PSI, Suspension_Coil$Manufacturing_Lot == "Lot1"),mu=1500) # t-test for Lot1 
+t.test(subset(Suspension_Coil$PSI, Suspension_Coil$Manufacturing_Lot == "Lot2"),mu=1500) # t-test for Lot2
+t.test(subset(Suspension_Coil$PSI, Suspension_Coil$Manufacturing_Lot == "Lot3"),mu=1500) # t-test for Lot3
