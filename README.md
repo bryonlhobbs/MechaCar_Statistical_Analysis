@@ -33,3 +33,14 @@ For Lot 2, the p-value is 0.6072, meaning that we cannot reject the null hypothe
 <img width="810" alt="T-Test_Lot3" src="https://user-images.githubusercontent.com/99457275/173207106-e98aedf1-b943-426b-a6f8-56e3ef7f14fd.png">
 
 Lot 3 stands out from the rest of the data.  With a p-value of 0.04168, we have sufficent reason to reject the null hypothesis, as the mean of this data is not statistically similar to the population standard of 1500 psi.
+
+## Study Design: MechaCar vs Competition
+
+For this example, I would like to compare cost with the cost of ownership.  
+
+H0: MechaCar's vehicles have a below average cost of ownership for the cost of the caar.
+Ha: MechaCar's vehicles do not have a below average cost of ownership for the cost of the car.
+
+I would use linear regression to test.  If the cost is above the regression line, it does not support the null hypothesis.  If it is below, it does support the null hypothesis.  
+
+Data needed includes maintenence costs, an estimated fuel cost based on the average miles driven per year, and the cost of the vehicle.
